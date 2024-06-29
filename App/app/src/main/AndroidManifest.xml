@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.liuapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/liulogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/liulogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LIUApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".EnrollStudentActivity"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InstructorUpdatesActivity"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetStatusActivity"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsertGradesActivity"
+            android:parentActivityName=".InstructorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCourseActivity"
+            android:parentActivityName=".InstructorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentUpdateActivity"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnrollCoursesActivity"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateInstructorActivity"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateStudentActivity"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsInstructorActivity"
+            android:parentActivityName=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsCourseActivity"
+            android:parentActivityName=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnlineServiceActivity"
+            android:parentActivityName=".StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EvaluationActivity"
+            android:parentActivityName=".StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentsActivity"
+            android:parentActivityName=".StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClassesActivity"
+            android:parentActivityName=".StudentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegistrationActivity"
+            android:parentActivityName=".StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdatePassActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InstructorActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
